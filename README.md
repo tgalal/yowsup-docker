@@ -46,13 +46,13 @@ Type /help for available commands
 
 This echoes back all received messages
 
-```docker run -v SOMEDIR:/root/.yowsup -it tgalal/yowsup demos --login PHONE:PASSWORD --echo```
+```docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup demos --login PHONE:PASSWORD --echo```
 
 ### One shot client
 
 Login, send a message, exit
 
-```docker run -v SOMEDIR:/root/.yowsup -it tgalal/yowsup demos --login PHONE:PASSWORD --send CONTACT_PHONE MESSAGE```
+```docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup demos --login PHONE:PASSWORD --send CONTACT_PHONE MESSAGE```
 
 ## E2E encryption
 To use e2e encryption in any of the clients, pass --moxie in any of the commands. For example:
