@@ -2,7 +2,7 @@
 
 #Installation
 
-docker pull tgalal/yowsup
+```docker pull tgalal/yowsup```
 
 #usage
 
