@@ -1,6 +1,8 @@
-#yowsup
-
 [yowsup](https://github.com/tgalal/yowsup) is a python library that implements WhatsApp's protocol. Through this docker image you are able to access yowsup's command line client and run different commands such as sending messages, creating groups, updating profile and many other things.
+
+#Installation
+
+docker pull tgalal/yowsup
 
 #usage
 
