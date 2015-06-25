@@ -35,7 +35,7 @@ Save the returned password as you will need it for login
 
 ##Clients
 ### Command line client
-
+	
 ```
 docker run -v SOMEDIR:/root/.yowsup -it tgalal/yowsup demos --login PHONE:PASSWORD --yowsup
 ```
@@ -70,4 +70,6 @@ docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup demos --login PHONE:PASSWORD -
 ## E2E encryption
 To use e2e encryption in any of the clients, pass --moxie in any of the commands. For example:
 
-```docker run -v SOMEDIR:/root/.yowsup -it tgalal/yowsup demos --login PHONE:PASSWORD --yowsup --moxie```
+```
+docker run -v SOMEDIR:/root/.yowsup -it tgalal/yowsup demos --login PHONE:PASSWORD --yowsup --moxie
+```
