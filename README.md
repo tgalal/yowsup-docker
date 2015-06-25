@@ -13,24 +13,32 @@ yowsup will need access to a persistent storage to store generated keys data ins
 ##Registration
 
 ### Step 1 request code
-```docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup registration --cc COUNTRYCODE --phone NUMBER --requestcode sms```
+```
+docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup registration --cc COUNTRYCODE --phone NUMBER --requestcode sms
+```
 
 or
 
-```docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup registration --cc COUNTRYCODE --phone NUMBER --requestcode voice```
+```
+docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup registration --cc COUNTRYCODE --phone NUMBER --requestcode voice
+```
 
 note that the phone number must also begin with the specified country code
 
 ### Step 2 verify code
 
-```docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup registration --cc COUNTRYCODE --phone NUMBER --register CODE```
+```
+docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup registration --cc COUNTRYCODE --phone NUMBER --register CODE
+```
 
 Save the returned password as you will need it for login
 
 ##Clients
 ### Command line client
 
-```docker run -v SOMEDIR:/root/.yowsup -it tgalal/yowsup demos --login PHONE:PASSWORD --yowsup```
+```
+docker run -v SOMEDIR:/root/.yowsup -it tgalal/yowsup demos --login PHONE:PASSWORD --yowsup
+```
 
 This will start yowsup shell, type /L to login
 
@@ -46,13 +54,18 @@ Type /help for available commands
 
 This echoes back all received messages
 
-```docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup demos --login PHONE:PASSWORD --echo```
+```
+docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup demos --login PHONE:PASSWORD --echo
+```
 
 ### One shot client
 
 Login, send a message, exit
 
-```docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup demos --login PHONE:PASSWORD --send CONTACT_PHONE MESSAGE```
+
+```
+docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup demos --login PHONE:PASSWORD --send CONTACT_PHONE MESSAGE
+```
 
 ## E2E encryption
 To use e2e encryption in any of the clients, pass --moxie in any of the commands. For example:
