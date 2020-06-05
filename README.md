@@ -1,16 +1,16 @@
 [yowsup](https://github.com/tgalal/yowsup) is a python library that implements WhatsApp's protocol. Through this docker image you are able to access yowsup's command line client and run different commands such as sending messages, creating groups, updating profile and many other things.
 
-#Installation
+# Installation
 
 ```docker pull tgalal/yowsup```
 
-#usage
+# usage
 
 Add ```--debug``` to any of the commands to get an insight on the actual protocol and see all incoming and outgoing data in your console.
 
 yowsup will need access to a persistent storage to store generated keys data inside, used at registration and for login with e2e encryption enabled to work. Therefore you'll need to mount a host dir at /root/.yowsup in each docker run command.
 
-##Registration
+## Registration
 
 ### Step 1 request code
 ```
@@ -33,7 +33,7 @@ docker run -v SOMEDIR:/root/.yowsup tgalal/yowsup registration --cc COUNTRYCODE 
 
 Save the returned password as you will need it for login
 
-##Clients
+## Clients
 ### Command line client
 	
 ```
